@@ -132,14 +132,14 @@
                                   <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
 
 
-                                  <div class="leftcontact">
+                               
                                             <div class="form-group">
                                               <p>동작 명<span>*</span></p>
                                               <span class="icon-case"><i class="fa fa-male"></i></span>
                                                   <input type="text" placeholder="어깨올림_01" name="nom" id="nom" data-rule="required"   data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
 
                                           <div class="validation"></div>
-                                 </div> 
+                         
 
                                       <div class="form-group">
                                       <p>동작 ID <span>*</span></p>
@@ -160,12 +160,19 @@
                                       <span class="icon-case"><i class="fa fa-phone"></i></span>
                                           <input type="text" name="society" id="phone" placeholder="IMAGE_SHOULDER_01" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
                                           <div class="validation"></div>
+                                          <button type="button" class="btn btn-success" style="height:40px; ">선택</button>
                                       </div>
 
                                       <div class="form-group">
-                                      <p>터치정보<span>*</span></p>
+                                      <p>터치정보<span></span></p>
                                       <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
                                           <input type="text" name="adresse" placeholder="{A1,A1,A1,A1}" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                                          <div class="validation"></div>
+                                      </div>
+                                       <div class="form-group">
+                                      <p>반복횟수<span></span></p>
+                                      <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+                                          <input type="text" name="adresse" placeholder="3" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
                                           <div class="validation"></div>
                                       </div>
 
@@ -176,9 +183,14 @@
 
                               </div>
 
-                           
+                              </div>
                      
-                          <button type="submit" class="bouton-contact">등록</button>
+                           <div id="bouton-contact-section" > 
+                               <button type="submit" class="bouton-contact1">등록</button>
+                    
+                               <button type="submit" class="bouton-contact2">취소</button>
+                           </div> 
+
 
                           </form>   
                        </div>

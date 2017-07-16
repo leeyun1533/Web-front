@@ -103,18 +103,32 @@ i {
 .contentform {
   padding: 40px 30px;
 }
+#bouton-contact-section{
+  display: inline-block;
 
-.bouton-contact{
+}
+.bouton-contact1{
   background-color: #81BDA4;
   color: #FFF;
-  text-align: center;
-  width: 100%;
+  width: 345px;
   border:0;
   padding: 17px 25px;
   border-radius: 0px 0px 5px 5px;
   cursor: pointer;
-  margin-top: 40px;
   font-size: 18px;
+
+}
+.bouton-contact2{
+  background-color: #FFA7A7;
+  color: #FFF;
+  width: 345px;
+  border:0;
+  padding: 17px 25px;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+ 
+  font-size: 18px;
+
 }
 
 .leftcontact {
@@ -127,6 +141,7 @@ i {
 
 .rightcontact {
   width:49.5%;
+  height: 70%;
   float:right;
   box-sizing: border-box;
   padding: 0px 0px 0px 15px;
