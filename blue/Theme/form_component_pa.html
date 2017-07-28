@@ -30,17 +30,12 @@
 
   <body>
 
-  <section id="container" >
-      <!-- **********************************************************************************************************************************************************
-      TOP BAR CONTENT & NOTIFICATIONS
-      *********************************************************************************************************************************************************** -->
-      <!--header start-->
-      <header class="header black-bg">
+    <header class="header black-bg">
               <div class="sidebar-toggle-box">
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>SMASH SMART MOVEMENT</b></a>
+            <a href="index_login_complete.html" class="logo"><b>SMASH SMART MOVEMENT</b></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
@@ -48,7 +43,7 @@
             </div>
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="login.html">Logout</a></li>
+                    <li><a class="logout" href="/login">Logout</a></li>
             	</ul>
             </div>
         </header>
@@ -64,21 +59,23 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
               	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered">admin</h5>
-              	  
-                  <li class="sub-menu">
+              	  <h5 class="centered">Admin</h5>
+              	  	
+          
+
+                 <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-desktop"></i>
                           <span>등록 및 관리</span>
                       </a>
                       <ul class="sub">
-                             <li><a  href="table_doctor.html">의료진</a></li>
-                          <li><a  href="table_pa.html">환자</a></li>
-                          <li><a  href="table_responsible_poster.html">반응형 포스터 기기</a></li>
-                           <li><a  href="table-device_obstacle.html">환자 식별 기기</a></li>
-                            <li><a  href="table_exercise.html">운동 프로그램</a></li>
-                             <li><a  href="table_movement.html">동작</a></li>
-                             <li><a  href="table_posterimage.html">포스터 이미지</a></li>
+                             <li><a  href="/table_doctor">의료진</a></li>
+                             <li><a  href="/table_pa">환자</a></li>
+                             <li><a  href="/table_responsible_poster">반응형 포스터 기기</a></li>
+                             <li><a  href="/table_device_obstacle">환자 식별 기기</a></li>
+                             <li><a  href="/table_exercise">운동 프로그램</a></li>
+                             <li><a  href="/table_movement">동작</a></li>
+                             <li><a  href="/table_posterimage">포스터 이미지</a></li>
                       </ul>
                   </li>
 
@@ -88,7 +85,7 @@
                           <span>기기 개통</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="tavle_responsible_poster_opening.html">반응형 포스터 기기</a></li>
+                          <li><a  href="/table_responsible_poster_opening">반응형 포스터 기기</a></li>
                           
                       </ul>
                   </li>
@@ -98,12 +95,12 @@
                           <span>시스템 관리</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="morris.html">시스템 상황 모니터링</a></li>
-                          <li><a  href="blank.html">기기장애 관리</a></li>
+                          <li><a  href="/morris">시스템 상황 모니터링</a></li>
+                          <li><a  href="/blank">기기장애 관리</a></li>
                     
                       </ul>
                   </li>
-                
+                 
 
               </ul>
               <!-- sidebar menu end-->
@@ -122,7 +119,7 @@
           	<!-- BASIC FORM ELELEMNTS -->
           	<div class="row mt">
               <div class="col-lg-12">
-                <form>
+                <form name="register_patient">
 
                   <h1>환자 등록</h1>
 
@@ -134,42 +131,42 @@
                                             <div class="form-group">
                                               <p>환자 번호<span>*</span></p>
                                               <span class="icon-case"><i class="fa fa-male"></i></span>
-                                                  <input type="text" placeholder="AE3330" name="nom" id="nom" data-rule="required"   data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
+                                                  <input type="text" placeholder="AE3330" name="pa_number" id="nom" data-rule="required"   data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
 
                                           <div class="validation"></div>
-                                 </div> 
+                              
 
                                       <div class="form-group">
                                       <p>이름 <span>*</span></p>
                                       <span class="icon-case"><i class="fa fa-user"></i></span>
-                                          <input type="text" name="prenom"  placeholder="홍길동" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
+                                          <input type="text" name="pa_name"  placeholder="홍길동" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
                                           <div class="validation"></div>
                                       </div>
 
                                       <div class="form-group">
                                       <p>성별 <span>*</span></p>  
                                       <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
-                                          <input type="email" name="email" placeholder="남" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
+                                          <input type="text" name="pa_sex" placeholder="남" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
                                           <div class="validation"></div>
                                       </div>  
 
                                       <div class="form-group">
                                       <p>연락처 <span>*</span></p>
                                       <span class="icon-case"><i class="fa fa-phone"></i></span>
-                                          <input type="text" name="society" id="phone" placeholder="010-1234-5678" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
+                                          <input type="text" name="Pa_phonebook"   placeholder="010-1234-5678" />
                                           <div class="validation"></div>
                                       </div>
 
                                       <div class="form-group">
                                       <p>주소 <span>*</span></p>
                                       <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
-                                          <input type="text" name="adresse" placeholder="가천길병원" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                                          <input type="text" name="pa_adresse" placeholder="가천길병원" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
                                           <div class="validation"></div>
                                       </div>
 
                          
                                    
-
+                                      </div>
 
 
                               </div>
@@ -179,20 +176,20 @@
                                       <div class="form-group">
                                       <p>ID <span>*</span></p>
                                       <span class="icon-case"><i class="fa fa-user"></i></span>
-                                          <input type="text" name="ville" id="ville" data-rule="required" placeholder="10자이내 영문" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+                                          <input type="text" name="pa_id" id="ville" data-rule="required" placeholder="10자이내 영문" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                                           <div class="validation"></div>
                                       </div>  
 
                                       <div class="form-group">
                                       <p>PASSWORD <span>*</span></p>  
                                       <span class="icon-case"><i class="fa fa-lock"></i></span>
-                                          <input type="password" name="phone" id="" data-rule="maxlen:10"  placeholder="10자이내 영문" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+                                          <input type="password" name="pa_password" id="" data-rule="maxlen:10"  placeholder="10자이내 영문" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
                                           <div class="validation"></div>
                                       </div>
                                       <div class="form-group">
                                       <p>생일 <span>*</span></p>
                                       <span class="icon-case"><i class="fa fa-info"></i></span>
-                                          <input type="text" name="fonction" id="fonction" data-rule="required" placeholder="19000101" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
+                                          <input type="text" name="pa_birth" id="fonction" data-rule="required" placeholder="19000101" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
                                           <div class="validation"></div>
                                       </div>
 
@@ -201,11 +198,11 @@
                                       
                               </div>
                               </div>
-                           <div id="bouton-contact-section" > 
-                               <button type="submit" class="bouton-contact1">등록</button>
-                    
-                               <button type="submit" class="bouton-contact2">취소</button>
-                           </div> 
+                               <div id="bouton-contact-section" > 
+                                   <button type="button" class="bouton-contact1" >등록</button>
+
+                                   <button type="submit" class="bouton-contact2">취소</button>
+                               </div> 
 
 
                           </form> 	
@@ -239,6 +236,8 @@
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
+     <!-- 등록폼 포스트 자바스크립트 -->
+    <script src="assets/js/registration_post.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
